@@ -1,0 +1,8 @@
+# Core
+python-pptx>=1.0.0      # native PowerPoint generation (slides, charts, tables, shapes)
+Pillow>=10.0.0          # image validation, perceptual-hash dedup, aspect-fit
+requests>=2.31.0        # downloading web images
+
+# Optional (only for the visual QC step; not required to build a deck)
+# PyMuPDF>=1.24.0        # render the exported PDF to PNG for eyeballing
+# LibreOffice (system install) is used to convert .pptx -> .pdf for QC

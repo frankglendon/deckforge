@@ -1,0 +1,31 @@
+{
+  "_note": "Illustrative figures for a public, non-confidential demo. Round numbers, not exact citations. Replace with your own verified, traceable data. This file demonstrates the research-data schema (topic -> facts[claim/value/source/url/year/confidence]).",
+  "topics": [
+    {
+      "topic": "Global EV market size & growth",
+      "facts": [
+        {"claim": "Global electric car sales kept climbing through the mid-2020s as more affordable models reached the market", "value": "~10m (2022) -> ~14m (2023) -> ~17m (2025E) units", "source_title": "IEA Global EV Outlook (illustrative)", "url": "https://www.iea.org/reports/global-ev-outlook-2025", "year": "2022-2025", "confidence": "med"},
+        {"claim": "EVs as a share of new car sales continued to rise", "value": "~18% of new car sales (2025E)", "source_title": "IEA (illustrative)", "url": "https://www.iea.org", "year": "2025", "confidence": "med"}
+      ]
+    },
+    {
+      "topic": "Regional landscape",
+      "facts": [
+        {"claim": "Sales remain concentrated in three blocs", "value": "China ~55%, Europe ~22%, North America ~12%, RoW ~11% (illustrative)", "source_title": "Public trackers (illustrative)", "url": "https://www.iea.org", "year": "2025", "confidence": "low"}
+      ]
+    },
+    {
+      "topic": "Competitive comparison (illustrative)",
+      "facts": [
+        {"brand": "Maker A", "action": "Vertical integration + direct sales", "detail": "In-house cells, OTA software, direct-to-consumer stores", "effect": "Premium positioning, high margin", "source_title": "Public filings (illustrative)", "url": "https://www.iea.org"},
+        {"brand": "Maker B", "action": "Cost leadership + battery supply", "detail": "Owns battery supply chain, broad price ladder", "effect": "Volume leadership", "source_title": "Public filings (illustrative)", "url": "https://www.iea.org"}
+      ]
+    },
+    {
+      "topic": "Trends",
+      "facts": [
+        {"claim": "Battery prices trended down over the cycle, narrowing the price gap with combustion cars", "value": "battery pack cost down materially 2020->2025 (illustrative)", "source_title": "BloombergNEF style trackers (illustrative)", "url": "https://www.iea.org", "year": "2020-2025", "confidence": "low"}
+      ]
+    }
+  ]
+}

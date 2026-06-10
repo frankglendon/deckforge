@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+
+# Build artifacts
+*.pdf
+build/
+dist/
+
+# Generated decks & downloaded images (regenerate from scripts)
+examples/**/output/
+examples/**/_images/
+*.tmp
+
+# OS
+.DS_Store
+Thumbs.db
