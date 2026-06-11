@@ -13,9 +13,13 @@ thin demos. Concretely:
   summary → **several sections, each with a divider + mini-TOC and multiple dense
   content pages** → section takeaways → conclusion (answering the opening
   questions) → methodology & sources → appendix/glossary.
-- **Substantive length** — a market study is typically **~50-60 pages**, not a
-  handful. The bundled EV example (**51 slides**) is the reference standard;
-  match or exceed it.
+- **Substantive length** — a market study is typically **50+ pages** (the bundled
+  EV example is **51 slides**), not a handful. Match or exceed it; never ship a
+  thin "representative" demo.
+- **MECE structure** — sections must be **Mutually Exclusive and Collectively
+  Exhaustive**: together they cover the whole topic with no gaps, and they do not
+  overlap. The EV example's five parts (market / demand / competition / technology
+  / opportunity) are MECE. 结构 MECE：各部分互斥且穷尽地覆盖主题。
 - **Information-rich every page** — an action-title conclusion + a real visual
   (native chart / table / framework) + analysis (body or Facts/Insights/
   Implications) + cited sources. No half-empty pages.
