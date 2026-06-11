@@ -123,12 +123,12 @@ def build():
     d.section_divider(1, "Market & momentum",
                       "Size, growth, regional landscape, drivers and policy",
                       ["Sales keep climbing as affordable models arrive",
-                       "EV share of new-car sales is nearing a tipping point",
+                       "Adoption nears a tipping point",
                        "Demand stays concentrated in three blocs",
-                       "Four structural drivers keep compounding while subsidy fades - so build the case on cost, product and policy, and treat incentives as upside",
-                       "Battery cost decline is the master variable",
-                       "Charging build-out is racing to keep up",
-                       "Policy is tightening from carrots to mandates"],
+                       "Four structural drivers keep compounding",
+                       "Battery cost is the master variable",
+                       "Charging build-out races to keep up",
+                       "Policy shifts from carrots to mandates"],
                       takeaway="Growth is structural, but the next leg depends on "
                                "affordability, charging and the shift from subsidy to mandate.",
                       image_path=img("div_market.jpg"))
@@ -296,10 +296,10 @@ def build():
                       "Who is buying, what they buy, and what holds them back",
                       ["Buyers are broadening from early adopters to mainstream",
                        "BEV is winning the long run; PHEV is a bridge",
-                       "Demand is splitting into three price bands with different economics - so pick one deliberately, because the mass middle competes margin away",
-                       "Total cost of ownership already favours EVs, but buyers anchor on sticker price - so sell whole-life cost, financing and energy as one package",
+                       "Demand is splitting into three price bands",
+                       "Total cost of ownership already favours EVs",
                        "Range, charging and price remain the top barriers",
-                       "A used-EV market is forming - and it matters"],
+                       "A used-EV market is forming"],
                       takeaway="Demand is mainstreaming, but price, charging and "
                                "residual-value confidence still gate the next cohort.",
                       image_path=img("div_demand.jpg"))
@@ -439,13 +439,13 @@ def build():
     # ================= PART 3 - COMPETITIVE LANDSCAPE =================
     d.section_divider(3, "Competitive landscape",
                       "Share, business-model archetypes, China, and the supply chain",
-                      ["Share is concentrating around a few scaled players, because EV economics reward scale - so reach scale in one lane quickly, or partner for it",
-                       "Two archetypes lead - integration and cost leadership - and straddling both leaves you sub-scale on each, so margin follows focus",
+                      ["Share is concentrating around a few scaled players",
+                       "Two archetypes lead: integration vs cost leadership",
                        "Profile - the integrator model",
                        "Profile - the cost-leader model",
-                       "Chinese OEMs are resetting the global cost frontier and accelerating exports - so assume the frontier is set in China and plan local content",
-                       "Legacy OEMs are strong in brand and scale but short on software - so expect partnerships, and a software-layer opening for challengers to take",
-                       "The battery supply chain is the real moat - whoever controls the midstream owns EV cost, and therefore margin and supply security",
+                       "Chinese OEMs are resetting the cost frontier",
+                       "Legacy OEMs: strong brand, short on software",
+                       "The battery supply chain is the real moat",
                        "Software-defined vehicles open a new front"],
                       takeaway="Scale, battery control and software - not legacy brand "
                                "alone - now decide who wins.",
@@ -633,7 +633,7 @@ def build():
                        "Solid-state is a step-change - but later than the hype",
                        "Charging is getting faster and smarter",
                        "Software and OTA become the product",
-                       "Autonomy advances in levels, not leaps - so win the assisted-driving present for premium attach, and treat full autonomy as optionality",
+                       "Autonomy advances in levels, not leaps",
                        "Vehicle-to-grid links EVs to the energy system"],
                       takeaway="Technology is commoditising the powertrain and moving "
                                "value to chemistry control, software and energy services.",
@@ -750,12 +750,12 @@ def build():
     # ============== PART 5 - OPPORTUNITIES & STRATEGY ==============
     d.section_divider(5, "Opportunities & strategy",
                       "Where the next decade is won - and what to do about it",
-                      ["Four opportunity spaces emerge below and around the vehicle - so aim where attractiveness and your right-to-win overlap, not at the biggest number",
+                      ["Four opportunity spaces emerge below and around the vehicle",
                        "Opportunity 1 - the affordable / entry segment",
                        "Opportunity 2 - the software & services margin pool",
-                       "Opportunity 3 - emerging markets and small mobility grow fastest on different economics - a locally-partnered, affordable model can build an early lead",
+                       "Opportunity 3 - emerging markets and small mobility",
                        "Strategic options for a challenger",
-                       "Implications for a new entrant - focus beats breadth, so commit to one lane, secure its scarce input, and sequence expansion from a defensible base"],
+                       "Implications for a new entrant"],
                       takeaway="The biggest, least-contested pools are affordability, "
                                "software/services and the upstream value chain.",
                       image_path=img("div_opportunity.jpg"))

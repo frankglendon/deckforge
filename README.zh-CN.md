@@ -45,10 +45,10 @@ DeckForge 用 [`python-pptx`](https://python-pptx.readthedocs.io/) 把结构化�
 | **多维对比表 + 启示条** | **事实 / 洞见 / 启示** |
 | ![对比表](assets/screenshots/07-comparison-table-zh.png) | ![三块洞察](assets/screenshots/09-insight-blocks-zh.png) |
 
-整册中文用**楷体（KaiTi）**渲染——原生形状、无豆腐块、完全 on-brand。同一份 deck 切到
-`lang="en-US"` 即整册转为**英文**（Georgia 衬线 + Arial）：同一套代码、一个开关、双语皆 on-brand。
+整册中文用**楷体（KaiTi）**渲染——原生形状、无豆腐块、完全 on-brand。切到 `lang="en-US"`
+即整册转为英文（同一套代码、一个开关，双语皆 on-brand）。
 
-![英文版](assets/screenshots/12-bilingual-en.png)
+![楷体宽页](assets/screenshots/12-bilingual-zh.png)
 
 ---
 
