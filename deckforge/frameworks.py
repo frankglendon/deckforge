@@ -5,9 +5,11 @@ Vector frameworks: KPI cards / 2x2 maps and chevron value-chains.
 These are drawn with native shapes (fully editable) and themed from the palette.
 Use them in the left visual area of a content page, or full-width.
 """
+import io
 from pptx.util import Pt
 from pptx.enum.text import PP_ALIGN, MSO_ANCHOR
 from pptx.enum.shapes import MSO_SHAPE, MSO_CONNECTOR
+from PIL import Image, ImageOps
 from .text import set_run_font
 
 EMU_IN = 914400
@@ -15,6 +17,18 @@ EMU_IN = 914400
 
 def _IN(v):
     return int(v * EMU_IN)
+
+
+def _fit_crop(path, w_in, h_in):
+    """Center-crop an image to the cell aspect (fill, no distortion) in-memory;
+    returns a BytesIO PNG/JPEG stream. Never mutates the source file."""
+    img = Image.open(path).convert("RGB")
+    img = ImageOps.fit(img, (max(1, int(w_in * 200)), max(1, int(h_in * 200))),
+                       Image.Resampling.LANCZOS)
+    buf = io.BytesIO()
+    img.save(buf, "JPEG", quality=90)
+    buf.seek(0)
+    return buf
 
 
 def kpi_grid(slide, theme, x, y, w, h, cards, *, cols=2, gap=0.18):
@@ -100,7 +114,8 @@ def image_row(slide, paths, x, y, w, *, gap=0.12, ratio=2.4, captions=None):
     cw = (w - gap * (n - 1)) / n
     ch = cw / ratio
     for i, p in enumerate(paths):
-        slide.shapes.add_picture(p, _IN(x + i * (cw + gap)), _IN(y), _IN(cw), _IN(ch))
+        pic = _fit_crop(p, cw, ch)  # center-crop to the exact cell aspect (no distortion)
+        slide.shapes.add_picture(pic, _IN(x + i * (cw + gap)), _IN(y), _IN(cw), _IN(ch))
         if captions and i < len(captions) and captions[i]:
             cb = slide.shapes.add_textbox(_IN(x + i * (cw + gap)), _IN(y + ch + 0.02),
                                           _IN(cw), _IN(0.3))

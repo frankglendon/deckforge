@@ -303,8 +303,9 @@ class Deck:
         imgs = images if images is not None else self._take_images(3)
         if imgs:
             from .frameworks import image_row
-            image_row(slide, imgs, 0.5, 5.18, 6.1, gap=0.1)
-            return (0.5, 1.78, 6.1, 3.1)
+            # 更接近 3:2 的照片（不再是 2.4:1 窄条）、下移贴近来源行，收掉下方空白
+            image_row(slide, imgs, 0.5, 5.34, 6.1, gap=0.12, ratio=1.6)
+            return (0.5, 1.78, 6.1, 3.25)
         return (0.5, 1.8, 6.1, 4.9)
 
     def wide_slide(self, title, *, kicker=None, subhead=None, sources=None,
@@ -396,7 +397,13 @@ class Deck:
         slide = self._slide()
         self.rect(slide, 0, 0, 13.333, 7.5, self.theme.dark_bg)
         if image_path:
-            slide.shapes.add_picture(image_path, IN(8.4), IN(1.2), IN(4.4), IN(3.4))
+            from .images import place
+            # 右栏配图：等比裁切填充，并在 takeaway 之上的区域内纵向居中
+            box_w, box_h = 4.4, 3.41
+            bx = 8.45
+            region_bottom = 6.3 if takeaway else 7.1
+            by = (0.95 + region_bottom - box_h) / 2
+            place(slide, image_path, bx, by, box_w, box_h, mode="fit")
         pt = self.textbox(slide, 0.6, 0.6, 7, 0.4)
         rp = pt.text_frame.paragraphs[0].add_run()
         rp.text = self.labels["part"].format(n=part_no)

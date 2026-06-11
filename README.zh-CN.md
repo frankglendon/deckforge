@@ -10,7 +10,7 @@
 
 [English](README.md) · **中文**
 
-![overview](assets/screenshots/00-overview.png)
+![overview](assets/screenshots/00-overview-zh.png)
 
 </div>
 
@@ -41,14 +41,14 @@ DeckForge 用 [`python-pptx`](https://python-pptx.readthedocs.io/) 把结构化�
 
 | 深蓝封面 + 衬线标题 | 标题 + 原生图表 + 分析 |
 |:---:|:---:|
-| ![cover](assets/screenshots/01-cover.png) | ![content](assets/screenshots/05-content-chart.png) |
+| ![封面](assets/screenshots/01-cover-zh.png) | ![内容页](assets/screenshots/05-content-chart-zh.png) |
 | **多维对比表 + 启示条** | **事实 / 洞见 / 启示** |
-| ![table](assets/screenshots/07-comparison-table.png) | ![blocks](assets/screenshots/09-insight-blocks.png) |
+| ![对比表](assets/screenshots/07-comparison-table-zh.png) | ![三块洞察](assets/screenshots/09-insight-blocks-zh.png) |
 
-同一份 deck 只需一个 `lang="zh-CN"` 开关即可整册转为**中文（楷体）**——原生形状、无豆腐块、
-完全 on-brand：
+整册中文用**楷体（KaiTi）**渲染——原生形状、无豆腐块、完全 on-brand。同一份 deck 切到
+`lang="en-US"` 即整册转为**英文**（Georgia 衬线 + Arial）：同一套代码、一个开关、双语皆 on-brand。
 
-![bilingual](assets/screenshots/12-bilingual-zh.png)
+![英文版](assets/screenshots/12-bilingual-en.png)
 
 ---
 
