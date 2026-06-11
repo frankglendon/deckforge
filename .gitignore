@@ -13,6 +13,7 @@ dist/
 
 # Generated decks & downloaded images (regenerate from scripts)
 examples/**/output/
+outputs/              # web app generated decks
 examples/**/_images/
 *.tmp
 

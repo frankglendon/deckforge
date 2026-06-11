@@ -105,9 +105,19 @@ re-branding) is in [docs/design-system.md](docs/design-system.md).
 
 ```bash
 pip install -r requirements.txt
-python examples/ev_market/build_deck.py      # English -> output/ev_market.pptx     (51 slides)
-python examples/ev_market/build_deck_zh.py   # 中文    -> output/ev_market_zh.pptx  (51 slides)
+
+python app.py                                # ⭐ web app -> http://127.0.0.1:5000 (no coding)
+python examples/ev_market/build_deck.py      # English  -> output/ev_market.pptx     (51 slides)
+python examples/ev_market/build_deck_zh.py   # 中文     -> output/ev_market_zh.pptx  (51 slides)
 ```
+
+### 🖥 No code? Use the web app
+
+`python app.py` launches **DeckForge Studio** — fill in the branding, edit a
+content spec (a working sample is pre-loaded), pick a language, and download a
+native, editable `.pptx`. Anyone can build a deck in the browser.
+
+![studio](assets/screenshots/web-studio.png)
 
 ```python
 from deckforge import Deck, charts

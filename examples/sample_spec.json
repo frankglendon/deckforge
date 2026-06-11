@@ -1,0 +1,102 @@
+{
+  "brand": "Acme Research",
+  "footer": "Acme Research",
+  "lang": "en-US",
+  "theme": { "primary": "00A9F4", "accent": "00A9F4" },
+  "pages": [
+    { "type": "cover", "title": "Global EV Market",
+      "subtitle": "Desk research - market, competition & opportunity",
+      "meta": "Sample report - illustrative data - 2026" },
+
+    { "type": "questions", "headline": "Three questions this report answers",
+      "intro": "Structured as: question - evidence - implication.",
+      "cards": [
+        [1, "Is growth still there?", "Market", ["How fast are EV sales growing?", "Where is share heading?", "Which regions lead?"]],
+        [2, "Who is winning, and how?", "Competition", ["Integration vs cost?", "How fast is China?", "Where does margin sit?"]],
+        [3, "Where is the opportunity?", "Strategy", ["Which segments are open?", "Hardware or software?", "What to prioritise?"]]
+      ] },
+
+    { "type": "agenda", "headline": "Contents",
+      "items": [[1, "Market & momentum - size, growth, regions"],
+                [2, "Competition - archetypes and China"],
+                [3, "Opportunity - where the next decade is won"]] },
+
+    { "type": "divider", "part_no": 1, "title": "Market & momentum",
+      "subtitle": "Size, growth and the regional landscape",
+      "toc": ["Demand keeps climbing", "Share nears a tipping point", "Three blocs dominate"],
+      "takeaway": "Growth is structural, but the next leg depends on affordability and charging." },
+
+    { "type": "content",
+      "title": "Demand keeps climbing as cheaper models arrive, but growth is cooling",
+      "kicker": "Global EV Market  |  Part 1  |  2026",
+      "body": [
+        ["Momentum is intact.", "Global electric-car sales rose from ~10m (2022) to ~17m (2025E) as cheaper models broadened the market."],
+        ["But the pace is cooling.", "Year-on-year growth eased from over 50% to the low-20s - a maturing, not stalling, market."],
+        "For a challenger, the prize shifts from being early to being cost-competitive at volume."
+      ],
+      "sources": [["IEA", "https://www.iea.org"], ["BloombergNEF", "https://about.bnef.com"]],
+      "chart": { "kind": "column", "caption": "Global electric-car sales", "unit": "Units, millions",
+                 "categories": ["2022", "2023", "2024", "2025E"],
+                 "series": { "Units (m)": [10.2, 13.9, 16.0, 17.3] }, "highlight": [0, 3] } },
+
+    { "type": "content",
+      "title": "Sales stay concentrated in three blocs, each on a different driver",
+      "kicker": "Global EV Market  |  Part 1  |  2026",
+      "body": [
+        ["Concentration is high.", "China, Europe and North America take the large majority of global EV sales; China alone is more than half."],
+        ["Each runs on a different driver.", "Cost parity, emissions mandates and tax credits respectively - so a copy-paste strategy fails."],
+        "Sequence market entry by driver-fit, not by size alone."
+      ],
+      "sources": [["IEA", "https://www.iea.org"]],
+      "chart": { "kind": "doughnut", "caption": "EV sales by region", "unit": "Share of global units, 2025E",
+                 "categories": ["China", "Europe", "N. America", "RoW"], "values": [55, 22, 12, 11], "highlight_idx": 0 } },
+
+    { "type": "table",
+      "title": "Two archetypes lead: integration vs cost leadership",
+      "kicker": "Global EV Market  |  Part 2  |  2026",
+      "rows": [
+        ["Dimension", "Integrator", "Cost leader", "Challenger (you)"],
+        ["Core move", "In-house cells + software + direct sales", "Captive battery + broad price ladder", "Pick one lane; don't straddle"],
+        ["Edge", "Premium brand, software margin", "Volume, price, speed", "Focus and cadence"],
+        ["Main risk", "Capital intensity", "Margin compression", "Sub-scale if unfocused"]
+      ],
+      "col_widths": [1.9, 3.7, 3.5, 3.2],
+      "takeaway": "Don't straddle. Win one lane, reach scale, then extend - margin follows focus.",
+      "sources": [["Public filings", "https://www.sec.gov"]] },
+
+    { "type": "content_blocks",
+      "title": "Four structural drivers keep compounding while subsidy fades",
+      "kicker": "Global EV Market  |  Part 1  |  2026",
+      "blocks": [
+        ["Facts", "Adoption is pushed by falling battery cost, wider model choice, tighter emissions policy and better charging."],
+        ["Insights", "The first four are structural; subsidy was always transitional - growth after it is removed proves real demand."],
+        ["Implications", "Build the case on cost, product and policy - treat any incentive as upside, not foundation."]
+      ],
+      "kpi": [["Cost", "Battery decline", "the master variable"],
+              ["Choice", "Model line-up", "every segment covered"],
+              ["Policy", "Carrots to mandates", "structural, tightening"],
+              ["Charging", "Access improving", "density rising fast"]],
+      "cols": 2,
+      "sources": [["IEA", "https://www.iea.org"]] },
+
+    { "type": "conclusion", "headline": "Back to the three questions - our view",
+      "lines": [
+        "Growth is real but maturing - plan for a mainstream market by 2030.",
+        "Two models win - a challenger must pick one lane, not straddle both.",
+        "Opportunity is below and around the vehicle - affordability, software, supply.",
+        "So what: choose one spearhead lane, secure its scarce input, win a few markets first."
+      ],
+      "sources": [["IEA", "https://www.iea.org"]] },
+
+    { "type": "sources", "title": "Methodology & sources", "kicker": "Methodology",
+      "groups": {
+        "Approach": [["Layered desk research - facts, then insights, then implications; every figure traceable", ""]],
+        "Market & competition": [["IEA Global EV Outlook (illustrative)", "https://www.iea.org"],
+                                  ["BloombergNEF-style tracker (illustrative)", "https://about.bnef.com"],
+                                  ["Public OEM filings (illustrative)", "https://www.sec.gov"]],
+        "Notes": [["All figures rounded / illustrative for a public demo - validate against primary sources", ""]]
+      } },
+
+    { "type": "back_cover", "line": "Thank you", "sub": "Acme Research  -  Desk-research practice  -  2026" }
+  ]
+}

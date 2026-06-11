@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}Deck ready &middot; DeckForge Studio{% endblock %}
+{% block body %}
+<div class="card">
+  <h1>Your deck is ready</h1>
+  <p class="muted">{{ pages }} slides &middot; native, editable PowerPoint &middot;
+    open it and adjust any chart, table or text.</p>
+  <p style="margin-top:16px">
+    <a class="btn" href="{{ url_for('download', token=token) }}">Download {{ name }}</a>
+  </p>
+  <p style="margin-top:18px"><a href="{{ url_for('index') }}">&larr; Build another</a></p>
+</div>
+
+<div class="card">
+  <h2>The kind of pages DeckForge produces</h2>
+  <div class="shots">
+    <img src="{{ url_for('shot', name='01-cover.png') }}" alt="cover">
+    <img src="{{ url_for('shot', name='05-content-chart.png') }}" alt="content + chart">
+    <img src="{{ url_for('shot', name='07-comparison-table.png') }}" alt="comparison table">
+  </div>
+</div>
+{% endblock %}

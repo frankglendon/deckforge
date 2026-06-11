@@ -89,9 +89,18 @@ DeckForge 用 [`python-pptx`](https://python-pptx.readthedocs.io/) 把结构化�
 
 ```bash
 pip install -r requirements.txt
+
+python app.py                                # ⭐ 网页应用 -> http://127.0.0.1:5000（无需写代码）
 python examples/ev_market/build_deck.py      # 英文 -> output/ev_market.pptx     (51 页)
 python examples/ev_market/build_deck_zh.py   # 中文 -> output/ev_market_zh.pptx  (51 页)
 ```
+
+### 🖥 不会写代码？用网页应用
+
+`python app.py` 启动 **DeckForge Studio** —— 填品牌、编辑内容规格（已预填可用样例）、
+选语言，即可下载原生可编辑的 `.pptx`。任何人都能在浏览器里生成一份 deck。
+
+![studio](assets/screenshots/web-studio.png)
 
 ```python
 from deckforge import Deck, charts

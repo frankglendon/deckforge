@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block body %}
+<div class="card">
+  <h1>Build a deck in your browser</h1>
+  <p class="muted">Set the branding, edit the content (a working sample is loaded
+    below), and generate a native, editable PowerPoint — no coding. Every chart is
+    a real PowerPoint object you can open and adjust.</p>
+
+  {% if error %}<div class="err"><b>Couldn't build the deck:</b> {{ error }}</div>{% endif %}
+
+  <form method="post" action="{{ url_for('generate') }}">
+    <div class="row">
+      <div>
+        <label>Brand</label>
+        <input type="text" name="brand" value="{{ form.brand or '' }}" placeholder="Acme Research">
+      </div>
+      <div>
+        <label>Footer</label>
+        <input type="text" name="footer" value="{{ form.footer or '' }}" placeholder="Acme Research">
+      </div>
+      <div>
+        <label>Language</label>
+        <select name="lang">
+          <option value="en-US" {{ 'selected' if (form.lang or 'en-US') != 'zh-CN' else '' }}>English</option>
+          <option value="zh-CN" {{ 'selected' if form.lang == 'zh-CN' else '' }}>中文（楷体 KaiTi）</option>
+        </select>
+      </div>
+      <div>
+        <label>Accent colour (hex)</label>
+        <input type="text" name="accent" value="{{ form.accent or '00A9F4' }}" placeholder="00A9F4">
+      </div>
+    </div>
+
+    <label>Content &nbsp;&middot;&nbsp; JSON spec
+      &nbsp;(<a href="{{ url_for('sample') }}">download sample</a>)</label>
+    <textarea name="spec" spellcheck="false">{{ spec }}</textarea>
+    <p class="muted">Brand / language / colour above override the JSON. Page types:
+      <code>cover, questions, agenda, divider, content, content_blocks, table,
+      prose, conclusion, sources, back_cover</code>.</p>
+
+    <button class="btn" type="submit">Generate deck &nbsp;&rarr;</button>
+  </form>
+</div>
+{% endblock %}
