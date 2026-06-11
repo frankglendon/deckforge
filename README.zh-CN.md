@@ -85,6 +85,23 @@ DeckForge 用 [`python-pptx`](https://python-pptx.readthedocs.io/) 把结构化�
 
 ---
 
+## 🧠 作为 Claude Skill 使用
+
+DeckForge 自带一个 [**Claude Skill**](skill/)，补上渲染库本身给不了的两层：**假设驱动的分析
+前端**（Is/Isn't 边界 → Issue Tree（MECE）→ Hypothesis Tree → **Dummy Pages**：先搭 50+ 页空
+框架再取数）+ **迭代式 QC**（5 轮迭代 + 6 类版面问题）。这两层吸收自 McKinsey Problem Solving，
+并接到本引擎上，于是 Claude 能一句话跑完整条流水线。
+
+```bash
+ln -s "$(pwd)/skill" ~/.claude/skills/deckforge-desk-research   # 安装
+# 然后在任意对话里：  “用 desk-research skill 帮我做 <主题> 的 deck。”
+```
+
+`skill/SKILL.md` 是导航地图；`skill/references/`（工作流、QC、构建指南）按需加载。
+详见 [skill/README.md](skill/README.md)。
+
+---
+
 ## 🚀 30 秒上手
 
 ```bash

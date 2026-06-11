@@ -101,6 +101,25 @@ re-branding) is in [docs/design-system.md](docs/design-system.md).
 
 ---
 
+## 🧠 Use it as a Claude Skill
+
+DeckForge ships a [**Claude Skill**](skill/) that adds what a rendering library can't give
+you on its own: the **hypothesis-driven analysis front-end** (Is/Isn't boundary → Issue
+Tree, MECE → Hypothesis Tree → **Dummy Pages**: lay out a 50+ page empty skeleton before
+gathering data) and an **iterative QC** layer (5 rounds + 6 layout-defect classes). It wires
+those — absorbed from McKinsey Problem Solving — to this engine, so Claude can run the whole
+pipeline from one sentence.
+
+```bash
+ln -s "$(pwd)/skill" ~/.claude/skills/deckforge-desk-research   # install
+# then, in any conversation:  "Use the desk-research skill to build a deck on <topic>."
+```
+
+`skill/SKILL.md` is the navigation map; `skill/references/` (workflow, QC, build guide) load
+on demand. Details in [skill/README.md](skill/README.md).
+
+---
+
 ## 🚀 Try it in 30 seconds
 
 ```bash
