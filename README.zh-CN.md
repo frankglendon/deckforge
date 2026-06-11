@@ -45,6 +45,11 @@ DeckForge 用 [`python-pptx`](https://python-pptx.readthedocs.io/) 把结构化�
 | **多维对比表 + 启示条** | **事实 / 洞见 / 启示** |
 | ![table](assets/screenshots/07-comparison-table.png) | ![blocks](assets/screenshots/09-insight-blocks.png) |
 
+同一份 deck 只需一个 `lang="zh-CN"` 开关即可整册转为**中文（楷体）**——原生形状、无豆腐块、
+完全 on-brand：
+
+![bilingual](assets/screenshots/12-bilingual-zh.png)
+
 ---
 
 ## 🎯 这个项目展示了什么

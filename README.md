@@ -52,6 +52,11 @@ market** — exercises every page type.
 | **Comparison table + takeaway** | **Facts / Insights / Implications** |
 | ![table](assets/screenshots/07-comparison-table.png) | ![blocks](assets/screenshots/09-insight-blocks.png) |
 
+The same deck re-renders in **Chinese (KaiTi)** from a single `lang="zh-CN"` flag — native
+shapes, no tofu, fully on-brand:
+
+![bilingual](assets/screenshots/12-bilingual-zh.png)
+
 ---
 
 ## 🎯 What this project demonstrates
